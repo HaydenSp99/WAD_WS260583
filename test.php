@@ -1,0 +1,5 @@
+<?php
+
+die("its working");
+
+?>
