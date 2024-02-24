@@ -15,16 +15,32 @@
     width: 100%;
     height: 100%;
     display: flex;
-    
+    margin: auto;
 
   }
   #profilepnl{
   width: 20%;
   color:blue;
+  flex:1;
   }
   #chatpnl{
     width: 80%;
     color: aqua;
+    flex:10;
+  }
+  #header{
+    color: darkblue;
+    height: 10%;
+  }
+  #chats{
+    flex: 2;
+    height: auto;
+
+  }
+  #active{
+    flex: 6;
+    height: auto;
+
   }
   </style>
 <body>
@@ -41,10 +57,15 @@
   <script src="js/datachannel-demo.js"></script>
 
   <div id="platform">
-    <div id="header"></div>
-    <div id="profilepnl"></div>
-    <div id="chatpnl">
+    
+    <div id="profilepnl">
+
+
+    </div>
+    <div id="chatpnl" style="display:flex">
+      <div id="header"></div>
       <div id="chats"></div>
+      <div id="active"></div>
     </div>
       
       
